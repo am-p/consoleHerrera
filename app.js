@@ -23,7 +23,7 @@ const main = async() => {
 	    tareas.crearTarea(desc);
 	    break;
 	case '2':
-	    console.log(tareas.listadoArray);
+	    tareas.listadoCompleto();
 	    break;
 	}
 	guardarDB(tareas.listadoArray);
