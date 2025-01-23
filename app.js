@@ -13,16 +13,16 @@ const main = async() => {
 	switch(opt) {
 	case '1':
 	    const desc = await leerInput('Descripcion:'); //desc de descripción
-	    tareas.crearTarea(desc)
+	    tareas.crearTarea(desc);
 	    break;
 	case '2':
-	    console.log(tareas._listado);
+	    console.log(tareas.listadoArray);
 	    break;
 	}
 	
 	await pausa();
     } while (opt !== '0');
     
-}
+};
 
 main();
