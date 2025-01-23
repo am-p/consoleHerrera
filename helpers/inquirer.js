@@ -83,10 +83,10 @@ const leerInput =  async(message) => {
     const prompt = inquirer.createPromptModule();
     const { desc } = await prompt(question);
     return desc;
-}
+};
 
 module.exports = {
     inquirerMenu,
     pausa,
     leerInput
-}
+};

@@ -9,6 +9,11 @@ const main = async() => {
     let opt = '';
     const tareas = new Tareas();
     const tareasDB = leerDB();
+    console.log(tareasDB, 'holi');
+
+    if (tareasDB) {
+	tareas.cargarTareasFromArray(tareasDB);
+    }
 
     do {
 	opt = await inquirerMenu();
